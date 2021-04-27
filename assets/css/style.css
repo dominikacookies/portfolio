@@ -1,0 +1,407 @@
+html {
+  font-size:10px;
+}
+
+:root {
+  --dark: #2d2e30;
+  --hover_dark: #1b1c1d;
+  --light: #f6f5ec;
+  --hover_light: #f8f8f8;
+  --visited: rgb(46, 41, 3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/* Body > Header */
+.header {
+  font-family: 'PT Sans Narrow', sans-serif;
+  letter-spacing: 0.15rem;
+  background-color: var(--dark);
+  opacity: 0.98.5;
+  color: var(--light);
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  position: fixed;
+  width: 100vw;
+}
+
+.header h1 {
+  padding: 0;
+}
+
+.header nav {
+  margin-right: 50px;
+  float: right;
+  font-size: 1.8rem;
+  align-content: center;
+}
+
+.header nav li {
+  display: inline-block;
+  margin-left: 3.5rem;
+}
+
+.header a {
+  color: var(--light);
+}
+
+.header a:hover {
+  color: var(--hover_light);
+}
+
+/* Body > Main */
+main {
+  background-image: linear-gradient(to right top, #efeadc, #f1eee1, #f4f2e6, #f6f5ec, #f9f9f1);
+  text-align: center;
+  color: var(--dark);
+  padding-top: 8rem; 
+}
+
+.large-text1 {
+  font-size: 10rem;
+}
+
+.large-text2 {
+  font-size: 8rem;
+}
+
+.information {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Body > Main > About */
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: var(--dark);
+  min-height: 90vh;
+  background-image: linear-gradient(var(--light),var(--hover_light));
+}
+
+.about__image img {
+  padding: 2rem;
+  border-radius: 50%;
+  max-width: 65rem;
+}
+
+.about__image--animation {
+  animation: slideinfromleft 1s ease-in;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    transform: translateX(-10rem);
+  }
+  70% {
+    transform: translateX(1rem);
+
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.about__text{
+  text-align: left;
+  padding: 2rem;
+  max-width: 55rem;
+}
+
+.about__text .information {
+  padding-top: 20px;
+  font-size: 1.9rem;
+}
+
+.about__button--cv {
+  padding: 1.5rem;
+  margin: 1.5rem; 
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.about__button--github {
+  padding: 1.5rem;
+  margin: 1.5rem; 
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  border-color: var(--dark);
+  border-width: 1px;
+}
+
+/* Body > Main > USPs */
+.usp {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.usp__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.usp__article {
+  margin: 1rem;
+  width: 36rem;
+}
+
+.usp__h2 {
+  padding-top: 2rem;
+}
+
+.usp .information {
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Body > Main > Portfolio */
+
+#portfolio {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.portfolio .large-text1{
+  text-transform: uppercase;
+}
+
+.portfolio h1 {
+  padding: 5rem;
+}
+
+.portfolio__button {
+  padding: 1.5rem;
+  margin: 4rem; 
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.75rem;
+  width: 35%;
+  border-radius: 1.5rem;
+}
+
+/* Body > Main > Portfolio > Main Project */
+.mainproject {
+  background-image: linear-gradient(
+    rgb(0,0,0,0.2),
+    rgb(0,0,0,0.8)
+    ),
+    url("../images/horiseon.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 80vh;
+  position:relative;
+}
+
+.mainproject:hover {
+  background-image: linear-gradient(
+    rgb(0,0,0,0.7),
+    rgb(0,0,0,0.2)
+    ),
+    url("../images/horiseon.png");
+}
+
+.mainproject__div {
+  color: var(--light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* Body > Main > Portfolio > Other Projects */
+.project {
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project__div {
+  color: var(--light);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.project2 {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.2),
+   rgb(0,0,0,0.8)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
+.project2:hover {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.7),
+   rgb(0,0,0,0.2)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
+.project3 {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.2),
+   rgb(0,0,0,0.8)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
+.project3:hover {
+  background-image: linear-gradient(
+    to bottom,
+   rgb(0,0,0,0.7),
+   rgb(0,0,0,0.2)
+   ),
+  url("../images/placeholder1.jpg");
+}
+
+/* Body > Main > Hover */
+#contact .large-text2 {
+  padding-bottom: 9rem;
+}
+
+#contact a {
+  color: var(--dark)
+}
+
+#contact a:hover {
+  color: var(--hover_dark)
+}
+
+#contact a:visited {
+  color: var(--visited)
+}
+
+/* Media queries for site responsiveness */
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .about__text {
+    text-align: center;
+  }
+  .header nav {
+    margin-right: 1rem;
+  }
+  .large-text2 {
+    font-size: 7rem;
+  }
+} 
+
+/* Mobile - max screen size 576px */
+@media screen and (max-width: 576px) {
+  .about__text {
+    text-align: center;
+  }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
+  }
+  .about__image img {
+    max-width: 40rem
+  }
+  .usp__article {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .usp__container {
+    padding: 0rem;
+  }
+  .usp__h2 {
+    padding-top: 0.5rem;
+  }
+  .usp .information {
+    padding: 0rem;
+  }
+  .large-text2 {
+    font-size: 6rem;
+  }
+  h1 {
+    padding: 2.5rem;
+  }
+  .header {
+    position: unset;
+  }
+  main {
+    padding-top: 1rem;
+  }
+}
+
+/* Mobile - max screen size 375px */
+@media screen and (max-width: 375px) {
+  .about__text {
+    text-align: center;
+  }
+   #portfolio .large-text1 {
+    font-size: 5rem;
+  }
+  .portfolio__button{
+    width: 20rem;
+  }
+  .about__image img {
+    max-width: 30rem
+  }
+  .usp__article {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .usp__container {
+    padding: 0rem;
+  }
+  .usp__h2 {
+    padding-top: 0.5rem;
+  }
+  .usp .information {
+    padding: 0rem;
+  }
+  .large-text2 {
+    font-size: 6rem;
+  }  
+  h1 {
+    padding: 2.5rem;
+  }
+  .header {
+    position: unset;
+  }
+  main {
+    padding-top: 1rem;
+  }
+}  
