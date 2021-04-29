@@ -1,5 +1,19 @@
+const devProjects = 
+`<div class="col-md-6">
+  <img class="portfolio-image" src="./assets/images/my-photo.jpeg" alt="image of Dominika Pietrzak">
+  <h3> NAME OF PROJECT </h3>
+  <button class="portfolio__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Find out more </button>
+</div>
+<div class="col-md-6">
+  <img class="portfolio-image" src="./assets/images/my-photo.jpeg" alt="image of Dominika Pietrzak">
+  <h3> NAME OF PROJECT </h3>
+  <button class="portfolio__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> Find out more </button>
+</div>
+</section>`
+
 const renderDevProjects = () => {
-  console.log("hello")
+  $("#selected-work-container").empty()
+  $("#selected-work-container").append(devProjects)
 }
 
 const renderDesignProjects = () => {
