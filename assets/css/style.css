@@ -199,6 +199,10 @@ h2 {
   padding: 5rem;
 }
 
+.portfolio h3 {
+  font-size: 3rem;
+}
+
 .portfolio__button {
   padding: 1.5rem;
   margin: 4rem; 
@@ -206,91 +210,13 @@ h2 {
   color: var(--light);
   font-weight: bold;
   font-size: 1.75rem;
-  width: 35%;
+  width: 50%;
   border-radius: 1.5rem;
 }
 
-/* Body > Main > Portfolio > Main Project */
-.mainproject {
-  background-image: linear-gradient(
-    rgb(0,0,0,0.2),
-    rgb(0,0,0,0.8)
-    ),
-    url("../images/horiseon.png");
-  background-repeat: no-repeat;
-  background-position: cover;
-  height: 80vh;
-  position:relative;
-}
-
-.mainproject:hover {
-  background-image: linear-gradient(
-    rgb(0,0,0,0.7),
-    rgb(0,0,0,0.2)
-    ),
-    url("../images/horiseon.png");
-}
-
-.mainproject__div {
-  color: var(--light);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-
-/* Body > Main > Portfolio > Other Projects */
-.project {
-  background-position: center;
-  height: 60vh;
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.project__div {
-  color: var(--light);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.project2 {
-  background-image: linear-gradient(
-    to bottom,
-   rgb(0,0,0,0.2),
-   rgb(0,0,0,0.8)
-   ),
-  url("../images/placeholder1.jpg");
-}
-
-.project2:hover {
-  background-image: linear-gradient(
-    to bottom,
-   rgb(0,0,0,0.7),
-   rgb(0,0,0,0.2)
-   ),
-  url("../images/placeholder1.jpg");
-}
-
-.project3 {
-  background-image: linear-gradient(
-    to bottom,
-   rgb(0,0,0,0.2),
-   rgb(0,0,0,0.8)
-   ),
-  url("../images/placeholder1.jpg");
-}
-
-.project3:hover {
-  background-image: linear-gradient(
-    to bottom,
-   rgb(0,0,0,0.7),
-   rgb(0,0,0,0.2)
-   ),
-  url("../images/placeholder1.jpg");
+.portfolio-image {
+  width: 100%;
+  padding: 2rem;
 }
 
 /* Body > Main > Hover */
