@@ -35,9 +35,9 @@ const buildDevProjectCard = (item) => {
         Find out more 
       </button>
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="${item.modalName}" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end offcanvas-background-override" tabindex="-1" id="${item.modalName}" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
       <h1>${item.name}</h1>

@@ -70,7 +70,7 @@ h2 {
 
 /* Body > Main */
 main {
-  background-image: linear-gradient(to right top, #efeadc, #f1eee1, #f4f2e6, #f6f5ec, #f9f9f1);
+  background-color: #efeadc;
   text-align: center;
   color: var(--dark);
   padding-top: 8rem; 
@@ -98,7 +98,6 @@ main {
   align-items: center;
   color: var(--dark);
   min-height: 90vh;
-  background-image: linear-gradient(var(--light),var(--hover_light));
 }
 
 .about__image img {
@@ -135,7 +134,7 @@ main {
   font-size: 1.9rem;
 }
 
-.about__button--cv {
+.about__button--primary {
   padding: 1.5rem;
   margin: 1.5rem; 
   background-color: var(--dark);
@@ -144,7 +143,7 @@ main {
   border-radius: 1.5rem;
 }
 
-.about__button--github {
+.about__button--secondary {
   padding: 1.5rem;
   margin: 1.5rem; 
   font-size: 1.5rem;
@@ -211,7 +210,7 @@ main {
   color: var(--light);
   font-weight: bold;
   font-size: 1.75rem;
-  width: 50%;
+  width: 40%;
   border-radius: 1.5rem;
 }
 
@@ -229,6 +228,10 @@ main {
 .portfolio-image {
   width: 100%;
   padding: 2rem;
+}
+
+.offcanvas-background-override {
+  background-color: var(--light) !important;
 }
 
 /* Body > Main > Hover */
