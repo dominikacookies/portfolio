@@ -214,6 +214,17 @@ h2 {
   border-radius: 1.5rem;
 }
 
+.portfolio--application__button {
+  padding: 1.2rem;
+  margin: 2rem; 
+  background-color: var(--dark);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 50%;
+  border-radius: 1.5rem;
+}
+
 .portfolio-image {
   width: 100%;
   padding: 2rem;
