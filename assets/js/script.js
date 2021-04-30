@@ -11,7 +11,7 @@ const devProjectsArray = [
     name: "Weather Wizard",
     image: "./assets/images/weatherApp.png",
     description: "Weather Wizard is an online application which allows the user to check the current and forecasted weather in a city of their choice. It saves the user's most recent searches using the persistent memory of local storage to create a sleek and effortless user experience. The application retrieves weather information using the Open Weather API and colour codes the UV index to inform the user whether the conditions are favourable, moderate or severe.",
-    repoUrl: `https://github.com/iwanagahime/event-jam`,
+    repoUrl: `https://github.com/dominikacookies/weather_forecast_app`,
     deployedUrl: `https://dominikacookies.github.io/weather_forecast_app/`,
     modalName: "weather-wizard",
     },
@@ -22,8 +22,9 @@ const goToApp = (event) => {
   window.open(deployedAppUrl, "_blank")
 }
 
-const goToRepo = () => {
-  console.log("repo")
+const goToRepo = (event) => {
+  const githubRepoUrl = $(event.currentTarget).attr("data-repoUrl")
+  window.open(githubRepoUrl, "_blank")
 }
 
 const buildDevProjectCard = (item) => {
