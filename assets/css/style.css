@@ -96,6 +96,27 @@ main {
   font-size: 1.8rem;
 }
 
+.button--primary {
+  padding: 1.5rem;
+  margin: 1.5rem; 
+  margin-left: 0rem;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.button--secondary {
+  padding: 1.5rem;
+  margin: 1.5rem; 
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  color: var(--dark);
+  border-color: var(--dark);
+  border-width: 1px;
+  background-color: #efeadc;
+}
+
 /* Body > Main > About */
 .about {
   display: flex;
@@ -140,26 +161,6 @@ main {
 .about__text .information {
   padding-top: 20px;
   font-size: 1.9rem;
-}
-
-.about__button--primary {
-  padding: 1.5rem;
-  margin: 1.5rem; 
-  margin-left: 0rem;
-  background-color: var(--dark);
-  color: var(--light);
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-}
-
-.about__button--secondary {
-  padding: 1.5rem;
-  margin: 1.5rem; 
-  font-size: 1.5rem;
-  border-radius: 1.5rem;
-  border-color: var(--dark);
-  border-width: 1px;
-  background-color: #efeadc;
 }
 
 /* Body > Main > USPs */
