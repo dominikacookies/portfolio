@@ -17,8 +17,9 @@ const devProjectsArray = [
     },
   ];
 
-const goToApp = () => {
-  console.log("hello")
+const goToApp = (event) => {
+  const deployedAppUrl = $(event.currentTarget).attr("data-deployedUrl")
+  window.open(deployedAppUrl, "_blank")
 }
 
 const goToRepo = () => {
@@ -44,8 +45,8 @@ const buildDevProjectCard = (item) => {
       <h2>In a nutshell</h2>
       <p class="information">${item.description}</p>
       <h2 class="mt-2">Check it out</h2>
-      <button class="portfolio--application__button deployed-button"> Deployed App </button>
-      <button class="portfolio--application__button repo-button"> Github Repo </button>
+      <button data-deployedUrl=${item.deployedUrl} class="portfolio--application__button deployed-button">Deployed App</button>
+      <button data-repoUrl=${item.repoUrl} class="portfolio--application__button repo-button">Github Repo</button>
       </div>
     </div>`
   )

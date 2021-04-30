@@ -20,12 +20,12 @@ a {
 
 h1 {
   font-size: 3rem;
-  padding: 3.5rem;
+  padding-top: 2rem;
 }
 
 h2 {
   font-size: 2.5rem;
-  padding: 2.5rem;
+  padding-top: 2rem;
 }
 
 /* Body > Header */
@@ -84,6 +84,14 @@ main {
   font-size: 8rem;
 }
 
+.large-text3 {
+  font-size: 6rem;
+}
+
+.title {
+  padding: 4rem;
+}
+
 .information {
   font-size: 1.8rem;
 }
@@ -137,6 +145,7 @@ main {
 .about__button--primary {
   padding: 1.5rem;
   margin: 1.5rem; 
+  margin-left: 0rem;
   background-color: var(--dark);
   color: var(--light);
   font-size: 1.5rem;
@@ -150,6 +159,7 @@ main {
   border-radius: 1.5rem;
   border-color: var(--dark);
   border-width: 1px;
+  background-color: #efeadc;
 }
 
 /* Body > Main > USPs */
@@ -187,20 +197,26 @@ main {
 /* Body > Main > Portfolio */
 
 #portfolio {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  min-height: 80vh;
 }
 
 .portfolio .large-text1{
   text-transform: uppercase;
 }
 
-.portfolio h1 {
+/* .portfolio h1 {
   padding: 5rem;
+} */
+
+.portfolio h2 {
+  font-size: 2rem;
 }
 
-.portfolio h3 {
-  font-size: 3rem;
+.portfolio-buttons-container {
+  width: 70%;
+  margin: auto;
 }
 
 .portfolio__button {
@@ -231,7 +247,7 @@ main {
 }
 
 .offcanvas-background-override {
-  background-color: var(--light) !important;
+  background-color:  #efeadc!important;
 }
 
 /* Body > Main > Hover */
