@@ -97,8 +97,12 @@ const renderDesignProjects = (event) => {
   designProjectsArray.forEach(displayDesignProject)
 }
 
+$("#linkedin-button").click(function() {
+  window.open("https://www.linkedin.com/in/dominika-pietrzak-183755137/", "_blank")
+});
+
 $("#cv-button").click(function() {
-  window.open("./assets/cv/DP_CV.pdf", "_blank")
+  window.open("./assets/cv/CV_DP.pdf", "_blank")
 });
 
 $("#github-button").click(function() {
