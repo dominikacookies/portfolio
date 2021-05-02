@@ -15,6 +15,14 @@ const devProjectsArray = [
     deployedUrl: `https://dominikacookies.github.io/weather_forecast_app/`,
     modalName: "weather-wizard",
     },
+    {
+      name: "Javascript Quiz",
+      image: "./assets/images/devprojects/javascriptQuiz.png",
+      description: "The Javascript Quiz is an online quiz that allows users to test their basic javascript knowledge. Users race against the clock to answer 5 Javascript related questions, every correct choice highlights the chosen answer in green and adds points to the user's score. An incorrect answer will inturn be highlighted in red and deduct time from the countdown clock. Users are als able to save and later view their highscores.",
+      repoUrl: `https://github.com/dominikacookies/js-quiz`,
+      deployedUrl: `https://dominikacookies.github.io/js-quiz/`,
+      modalName: "jz-quiz",
+      },
   ];
 
 const designProjectsArray = [
@@ -42,7 +50,7 @@ const goToRepo = (event) => {
 
 const buildDevProjectCard = (item) => {
   $("#selected-work-container").append(
-    `<div class="col-md-6">
+    `<div class="col-md-4">
       <img class="portfolio-image" src=${item.image} alt="image of ${item.name}">
       <h3>${item.name}</h3>
       <button class="portfolio__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#${item.modalName}" aria-controls="offcanvasRight${item.name}"
