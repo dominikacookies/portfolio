@@ -1,28 +1,29 @@
 # Personal Portfolio
 
-## Description
-This project is a personal portfolio which has been built using html and css languages. 
-The portfolio presents an overview of my skill set alongside 3 examples of projects I have previously worked on. 
-If you'd like to get in touch, it also contains a link to my LinkedIn profile.
-
-## Key Features
-1. The site optimises for different screen sizes through the use of flexbox (USP section) and media queries (in multiple places)
-2. The site showcases the current portfolio and contains placeholders for upcoming projects
-3. When an item in the navigation bar is selected, the browser will scroll down to the relevant section
-4. When the site loads, the image of the portfolio owner has been animated to ease in from the left
-5. The site contains main information about the owner and a link to the LinkedIn
-
 ## Link to Deployed Git Page
 https://dominikacookies.github.io/personal_portfolio/
 
+## License
+MIT
+
+## Technologies used
+HTML5, CSS, Javascript, jQuery, Bootstrap
+
+## Description
+This project is a personal portfolio that displays some of the key development projects I have worked on alongside my key skills.
+
+## Key Features
+1. The site optimises for different screen sizes through the use of flexbox (USP section) and media queries (in multiple places)
+2. The site dynamically renders development or design projects based on the user's selection.
+3. If a link in the nav bar is selected, the browser will scroll down to the relevant section
+4. When the site loads, the image of the portfolio owner has been animated to ease in from the left
+5. The site contains links to Github, deployed applications and my LinkedIn.
+
 ## Desktop Screenshots
-[Website rendered on desktop](.assets/images/../../assets/images/screenshots/desktop.png "Website rendered on desktop")
+### Website with the development projects section
 
-## Mobile Screenshots
-[Website rendered on mobile](.assets/images/../../assets/images/screenshots/mobile.png "Website rendered on mobile")
+ ![image](./assets/images/screenshots/potfolio-devsection.png) 
 
-## Videos of Working Page
+### Website with the design section only
 
-[Desktop](.assets/videos/../../assets/videos/desktopvideo.mov "Desktop")
-
-[Tablet and mobile](.assets/videos/../../assets/videos/responsivenessvideo.mov "Tablet and mobile")
+![image](./assets/images/screenshots/potfolio-designsectiononly.png )
