@@ -97,6 +97,15 @@ main {
 }
 
 .button--primary {
+  padding: 1rem;
+  margin: 1rem; 
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.button--primary--large {
   padding: 1.5rem;
   margin: 1.5rem; 
   margin-left: 0rem;
@@ -184,9 +193,12 @@ main {
   font-size: 2rem;
 }
 
-.portfolio-buttons-container {
-  width: 70%;
-  margin: auto;
+.project-type-card {
+  width: 500px;
+  margin: 3px;
+  background-color: var(--light);
+  border-width: 1px;
+  border-color: (var(--dark));
 }
 
 .portfolio__button {
@@ -333,6 +345,9 @@ main {
   }
   .usp .information {
     padding: 0rem;
+  }
+  .project-type-card {
+    width: 300px
   }
 }
 
