@@ -39,7 +39,7 @@
       <!-- About -->
       <section id="about" class="about">
         <div class="about__image about__image--animation">
-          <img src="./assets/images/dominikaAvatar.jpeg" alt="image of Dominika Pietrzak">
+          <img src="./assets/images/avatar.jpeg" alt="image of Dominika Pietrzak">
         </div>
         <div class="about__text">
             <div class="large-text1">
@@ -49,11 +49,11 @@
               I'M DOM.
             </div>
             <div class=information>
-              Well... technically Dominika Pietrzak, but why bother with formalities?<br>
-              I'm a vibrant individual with a record of effective project management and strategy formulation currently undertaking a Full Stack Development Course. <br>
-              I enjoy working with small businesses and would love to help you design or build your website!
+              I'm a vibrant individual who enjoys tackling new challenges and complex problem solving. <br>
+              Intrigued about how things work and passionate about making them even better, I've undertaken a full stack development course. <br>
+              I'd love to continue my development journey in an innovative company, with strong integrity and culture.
             </div>
-            <button class="button--primary" id="linkedin-button">
+            <button class="button--primary--large" id="linkedin-button">
               Get in Touch
             </button>
             <button class="button--secondary" id="cv-button">
@@ -73,15 +73,21 @@
         <h2 class="portfolio-text-container">
           Click on one of the buttons to take a look at some of my selected development and design work.
         </h2>
-        <div class="row portfolio-buttons-container">
-          <div class="col-md-6">
-            <button id="dev-projects-button" class="button--primary"> Developments </button>
+        <div class="d-flex flex-row flex-wrap justify-content-around">
+          <div class="card project-type-card" id="dev-projects-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title pb-3">DEV PROJECTS</h2>
+            </div>
           </div>
-          <div class="col-md-6">
-            <button id="design-projects-button" class="button--primary"> Designs </button>
+          <div  class="card project-type-card" id="design-projects-card">
+            <img src="https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title pb-3">DESIGN PROJECTS</h2>
+            </div>
           </div>
         </div>
-        <section id="selected-work-container" class="row"> </section>
+        <section id="selected-work-container" class="d-flex flex-row flex-wrap justify-content-around"> </section>
       </section>
 
       <!-- USPs -->
