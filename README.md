@@ -1,7 +1,7 @@
 # Personal Portfolio
 
 ## Link to Deployed Git Page
-https://dominikacookies.github.io/personal_portfolio/
+https://dominikacookies.github.io/portfolio/
 
 ## License
 MIT
