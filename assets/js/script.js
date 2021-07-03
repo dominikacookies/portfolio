@@ -26,7 +26,7 @@ const devProjectsArray = [
   {
     name: "Tech Blog",
     image: "./assets/images/devprojects/tech-blog.png",
-    description: "Vegan pals is an online website, designed to help individuals with food intolerances discover vegan dishes that suit their dietry requirements. Additionally, the application allows users to save their favourite recipes and arrange to cook them with other users that hold the same intolerances by connecting them together.",
+    description: "Tech blog is exactly what it says on the tin, a blogging site for all things tech. As a logged in user you're able to not only read blogs but also create update and delete your own. The same can be done with comments. The app relies on a relational database to store user and blog information, custom authenticator middleware to determine whether a user should have access to private pages and bcrypt to ensure the password is stored and retrieved securely from the database. ",
     repoUrl: `https://github.com/dominikacookies/tech-blog`,
     deployedUrl: `https://fathomless-plains-35453.herokuapp.com/`,
     modalName: "tech-blog",
