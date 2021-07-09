@@ -201,6 +201,13 @@ main {
   border-color: (var(--dark));
 }
 
+.dev-project-card {
+  width: 35%;
+  margin: 10px;
+  border-width: 1px;
+  border-color: rgb(187, 176, 155);
+}
+
 .portfolio__button {
   padding: 1.5rem;
   margin: 4rem; 
@@ -230,6 +237,12 @@ main {
 
 .offcanvas-background-override {
   background-color:  #efeadc!important;
+}
+
+#selected-work-container {
+  background-color: #f3f0e8;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 /* Body > Main > USPs */
@@ -301,6 +314,9 @@ main {
     margin-left: 0rem;
     margin-right: 0rem;
   }
+  .dev-project-card {
+    width: 70%
+  }
 } 
 
 /* Mobile - max screen size 576px */
@@ -348,6 +364,9 @@ main {
   }
   .project-type-card {
     width: 300px
+  }
+  .dev-project-card {
+    width: 90%
   }
 }
 
