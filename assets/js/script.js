@@ -1,36 +1,44 @@
 const devProjectsArray = [
   {
-  name: "Event Jam",
-  image: "./assets/images/devprojects/event-jam.png",
-  description: "Event Jam is an online application which allows users to search for events and COIVD-19 information in any city in the UK by retrieving information from the Government's COVID-19 Dashboard and Ticketmaster APIs. The application visually displays the number of COVID-19 cases identfied in a given area using the chart.js framework, allows users to book tickets for an event by redirecting them to the relevant Ticketmaster page as well as to save the event to their favourites using the persistent memory of local storage.   ",
-  repoUrl: `https://github.com/iwanagahime/event-jam`,
-  deployedUrl: `https://iwanagahime.github.io/event-jam/`,
-  modalName: "event-jam",
-  },
-  {
     name: "Vegan Pals",
+    shortDescription: "Vegan recipes and new pals finder.",
     image: "./assets/images/devprojects/vegan-pals.png",
-    description: "Vegan pals is an online website, designed to help individuals with food intolerances discover vegan dishes that suit their dietry requirements. Additionally, the application allows users to save their favourite recipes and arrange to cook them with other users that hold the same intolerances by connecting them together.",
+    description: "Vegan pals supports users converting to veganism by presenting them with vegan recipes that meet their dietry requirements and allowing them to connect with other users that have the same intolerances. </br> Test account login: </br> Username: misha@lovevegan.com  </br> Password: MyPassword",
+    features: "RESTful API which accommodates all CRUD operations</br> Custom authentication middleware </br> Relational user profiles </br> 3rd party API </br> Pagination </br> Custom handlebars helpers",
     repoUrl: `https://github.com/dominikacookies/vegan-pals-2.0`,
     deployedUrl: `https://vegan-pals-2.herokuapp.com/`,
     modalName: "vegan-pals",
   },
   {
-    name: "Weather Wizard",
-    image: "./assets/images/devprojects/weather-app.png",
-    description: "Weather Wizard is an online application which allows the user to check the current and forecasted weather in a city of their choice. It saves the user's most recent searches using the persistent memory of local storage to create a sleek and effortless user experience. The application retrieves weather information using the Open Weather API and colour codes the UV index to inform the user whether the conditions are favourable, moderate or severe.",
-    repoUrl: `https://github.com/dominikacookies/weather_forecast_app`,
-    deployedUrl: `https://dominikacookies.github.io/weather_forecast_app/`,
-    modalName: "weather-wizard",
-    },
+  name: "Event Jam",
+  shortDescription: "UK city events and COVID-19 info.",
+  image: "./assets/images/devprojects/event-jam.png",
+  description: "Event Jam allows users to search for events in any city in the UK and visually displays relevant COVID-19 data as a graph. Users are also able to favourite events which are distinguished when new search results render.",
+  features: "Pagination </br> 3rd party APIs </br> Chart js",
+  repoUrl: `https://github.com/iwanagahime/event-jam`,
+  deployedUrl: `https://iwanagahime.github.io/event-jam/`,
+  modalName: "event-jam",
+  },
   {
     name: "Tech Blog",
+    shortDescription: "Tech blogging site.",
     image: "./assets/images/devprojects/tech-blog.png",
-    description: "Tech blog is exactly what it says on the tin, a blogging site for all things tech. As a logged in user you're able to not only read blogs but also create update and delete your own. The same can be done with comments. The app relies on a relational database to store user and blog information, custom authenticator middleware to determine whether a user should have access to private pages and bcrypt to ensure the password is stored and retrieved securely from the database. ",
+    description: "Tech blog is exactly what it says on the tin, a blogging site for all things tech. As a logged in user you're able to not only read blogs but also create update and delete your own. The same can be done with comments.",
+    features: "RESTful API which accommodates all CRUD operations </br> Bespoke user authentication middleware </br> Bcrypt for hashing and validating password",
     repoUrl: `https://github.com/dominikacookies/tech-blog`,
     deployedUrl: `https://fathomless-plains-35453.herokuapp.com/`,
     modalName: "tech-blog",
   },
+  {
+    name: "Weather Wizard",
+    shortDescription: "Worldwide weather dashboard.",
+    image: "./assets/images/devprojects/weather-app.png",
+    description: "Weather Wizard allows the user to check the current and forecasted weather in a city of their choice. It saves the user's most recent searches and colour codes the UV index to inform the user whether the conditions are favourable, moderate or severe.",
+    features: "3rd party API </br> Local storage </br> Responsive interface",
+    repoUrl: `https://github.com/dominikacookies/weather_forecast_app`,
+    deployedUrl: `https://dominikacookies.github.io/weather_forecast_app/`,
+    modalName: "weather-wizard",
+    }
   ];
 
 const designProjectsArray = [
@@ -59,10 +67,11 @@ const goToRepo = (event) => {
 const buildDevProjectCard = (item) => {
   $("#selected-work-container").append(
     `
-    <div class="card project-type-card">
+    <div class="card project-type-card dev-project-card">
       <img src=${item.image} class="card-img-top">
       <div class="card-body">
         <h2 class="card-title pb-3">${item.name}</h2>
+        <p class="information">${item.shortDescription}</p>
         <button class="button--primary" data-bs-toggle="offcanvas" data-bs-target="#${item.modalName}" aria-controls="offcanvasRight${item.name}">View now </button>
       </div>
     </div>
@@ -74,6 +83,8 @@ const buildDevProjectCard = (item) => {
       <h1>${item.name}</h1>
       <h2>In a nutshell</h2>
       <p class="information">${item.description}</p>
+      <h2>Key features </br> & Technologies Used</h2>
+      <p class="information">${item.features}</p>
       <h2 class="mt-2">Check it out</h2>
       <button data-deployedUrl=${item.deployedUrl} class="portfolio--application__button deployed-button">Deployed App</button>
       <button data-repoUrl=${item.repoUrl} class="portfolio--application__button repo-button">Github Repo</button>
@@ -110,7 +121,7 @@ $("#linkedin-button").click(function() {
 });
 
 $("#cv-button").click(function() {
-  window.open("./assets/cv/CV_CG_DP.pdf", "_blank")
+  window.open("./assets/cv/DP_CV_.pdf", "_blank")
 });
 
 $("#github-button").click(function() {
